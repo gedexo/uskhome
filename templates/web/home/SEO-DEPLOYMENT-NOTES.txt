@@ -1,0 +1,4 @@
+Updated bilingual titles, descriptions, visible service-centre content, static HTML features, FAQs, audiences and videos.
+After hosting: set absolute canonical/hreflang URLs, generate sitemap.xml with the real public URLs, reference it in robots.txt and submit to Google Search Console. No domain guessed.
+Google does not use meta keywords for ranking; avoid keyword stuffing. Source: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
+Mobile improvements: dedicated header offer row, responsive layouts, touch targets, constrained dialogs. Browser rendering unavailable in this environment; confirm on actual mobile devices after upload.

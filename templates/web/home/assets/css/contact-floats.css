@@ -1,0 +1,19 @@
+/* Floating WhatsApp and call controls, shared across all pages. */
+.contact-floats{position:fixed;right:40px;bottom:40px;display:flex;gap:20px;z-index:100}
+.contact-floats .contact-float{display:flex;align-items:center;justify-content:center;width:60px;height:60px;flex:0 0 60px;border-radius:50%;color:#fff!important;box-shadow:2px 2px 6px #0003;text-decoration:none;transition:transform .15s}
+.contact-float.whatsapp{background:#25d366}.contact-float.call{background:#20519d}
+.contact-float svg{width:30px;height:30px;display:block}.contact-float:hover{transform:translateY(-3px)}
+.contact-float:focus-visible{outline:3px solid #f3ad38;outline-offset:4px}
+body.has-contact-floats footer{padding-bottom:130px}
+@media(max-width:1100px){body.has-sticky-offer .contact-floats{bottom:calc(104px + env(safe-area-inset-bottom,0px))}}
+@media(max-width:600px){.contact-floats{right:16px;bottom:calc(20px + env(safe-area-inset-bottom,0px));gap:12px}.contact-floats .contact-float{width:52px;height:52px;flex-basis:52px}.contact-float svg{width:27px;height:27px}body.has-sticky-offer footer{padding-bottom:180px}}
+@media(prefers-reduced-motion:reduce){.contact-floats .contact-float{transition:none}}
+@media print{.contact-floats{display:none}}
+
+/* Agent access on the left, opposite the contact controls. */
+.agent-login-float{position:fixed;left:40px;bottom:40px;z-index:100;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:52px;padding:12px 18px;border:1px solid #ffffff40;border-radius:12px;background:#293b91;color:#fff!important;box-shadow:0 5px 18px #17255130;font-size:15px;font-weight:600;line-height:1.4;text-decoration:none;white-space:nowrap}
+.agent-login-float svg{flex-shrink:0}.agent-login-float:hover{background:#192969}.agent-login-float:focus-visible{outline:3px solid #f3ad38;outline-offset:4px}
+@media(max-width:1100px){body.has-sticky-offer .agent-login-float{bottom:calc(104px + env(safe-area-inset-bottom,0px))}}
+@media(max-width:600px){.agent-login-float{left:16px;bottom:calc(20px + env(safe-area-inset-bottom,0px));padding:12px;gap:7px;font-size:14px}}
+@media(max-width:360px){.agent-login-float{left:12px;padding:10px;font-size:13px;gap:6px}}
+@media print{.agent-login-float{display:none}}
